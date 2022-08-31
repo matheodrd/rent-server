@@ -1,10 +1,19 @@
 body {
     font-family: monospace;
+    font-size: 28px;
     background-color: rgb(5, 8, 8);
+    display: flex;
+    align-items: center;
+}
+
+p {
+    margin: 10px;
+    margin-top: 15px;
 }
 
 .container {
     display: flex;
+    justify-content: center;
     width: 600px;
     height: 900px;
     border: 9px black solid;
@@ -13,6 +22,37 @@ body {
     padding: 10px;
     color: azure;
     background-image: url(./img/bg-waves.jpg);
+}
+
+
+.wrapper {
+    height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+.wrapper span {
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.input-int {
+    width: 50px;
+    height: 25px;
+    border-radius: 12px;
+    font-size: 20px;
+    color: ghostwhite;
+    background: none;
+    box-shadow: 0 5px 10px rgb(36, 30, 70);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 input[type=number] { 
