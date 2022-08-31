@@ -1,0 +1,28 @@
+body {
+    font-family: monospace;
+    background-color: rgb(5, 8, 8);
+}
+
+.container {
+    display: flex;
+    width: 600px;
+    height: 900px;
+    border: 9px black solid;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    color: azure;
+    background-image: url(./img/bg-waves.jpg);
+}
+
+input[type=number] { 
+    -moz-appearance: textfield;
+    appearance: textfield;
+    margin: 0; 
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button { 
+      -webkit-appearance: none; 
+      margin: 0; 
+}
