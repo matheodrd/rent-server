@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,21 +9,40 @@
     <link rel="icon" href="img/logo.png" type="image/png">
     <title>Louer un serveur</title>
 </head>
+
 <body>
+
     <div class="container">
         <div class="incdec-ct">
             <div class="cores-ct"></div>
-                <p>Nombre de cores</p>
+            <p>Nombre de cores</p>
+            <div class="incdec-cores">
+                <div class="wrapper">
+                    <span class="minus" id="mcores">-</span>
+                    <input type="number" name="cores" class="input-int" id="cores" value="1" min="1" max="56">
+                    <span class="plus" id="pcores">+</span>
+                </div>
+            </div>
+
+            <div class="incdec-ct">
+                <div class="cores-ct"></div>
+                <p>Nombre de RAM</p>
                 <div class="incdec-cores">
                     <div class="wrapper">
-                        <span class="minus" id="mcores">-</span>
-                        <input type="number" name="cores" class="input-int" id="cores" oninput="this.value = !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null" value="1" min="1" max="56">
-                        <span class="plus" id="pcores">+</span>
+                        <span class="minus" id="mram">-</span>
+                        <input type="number" name="ram" class="input-int" id="ram" value="1" min="1" max="172">
+                        <span class="plus" id="pram">+</span>
                     </div>
                 </div>
+            </div>
+
         </div>
+
+
+
     </div>
 
     <script src="app.js"></script>
 </body>
+
 </html>
